@@ -9,11 +9,10 @@ const s5 = "and";
 
 // Concatenate the string variables into one new string
 
+let tongueTwister = s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5;
 
 // Print out the concatenated string
-
-
-
+console.log(tongueTwister);
 
 /*******************************************
     Iteration 1.2 | Camel Tail
@@ -22,12 +21,15 @@ const part1 = "java";
 const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
+const newJava = part1.slice(0, part1.length - 1);
+const upperCase = part1[part1.length - 1].toUpperCase();
+const final1 = newJava + upperCase;
 
-
+const newScript = part2.slice(0, part2.length - 1);
+const toUpperCase = part2[part2.length - 1].toUpperCase();
+const final2 = newScript + toUpperCase;
 // Print the cameLtaiL-formatted string
-
-
-
+console.log(final1 + " " + final2);
 
 /*******************************************
     Iteration 2.1 | Calculate Tip
@@ -35,23 +37,19 @@ const part2 = "script";
 const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
-
+let tip = billTotal * 0.15;
 
 // Print out the tipAmount
-
-
-
-
+console.log(tip);
 /*******************************************
     Iteration 2.2 | Generate Random Number
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
-
-
+let random = Math.random() * 10;
+let integer = Math.round(random);
 // Print the generated random number
-
-
+console.log(integer);
 
 /*******************************************
     Iteration 3.1 | Booleans
